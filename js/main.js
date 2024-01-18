@@ -3,6 +3,7 @@ document.querySelector('button').addEventListener('click', getFetch)
 function getFetch(){
   const choice = document.querySelector('input').value
   console.log(choice)
+  
   const url = `https://api.nasa.gov/planetary/apod?api_key=iJy0Nd4wZZzfW2HFgBkNV4DDUsZ6PxL3RqQRgFfI&date=${choice}`
 
   fetch(url)
@@ -18,6 +19,10 @@ function getFetch(){
         }
        
         document.querySelector('h3').innerText = data.explanation
+
+        // Toggle the visibility of the photo-container
+        const photoContainer = document.querySelector('.photo-container');
+        photoContainer.classList.toggle('hidden');
       })
       .catch(err => {
           console.log(`error ${err}`)

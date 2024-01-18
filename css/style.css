@@ -106,3 +106,28 @@ h3 {
   position: relative;
   z-index: 1;
 }
+
+img {
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.photo-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  width: 75%;
+  margin: 5% auto;
+  border: 1px solid #fff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    padding: 2.5%;
+    flex-direction: column;
+}
+
+h3 {
+  font-size: xx-large; 
+}
+
+.hidden {
+  display: none;
+}
