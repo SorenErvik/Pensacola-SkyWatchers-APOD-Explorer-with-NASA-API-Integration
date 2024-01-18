@@ -1,5 +1,7 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
+let isPhotoContainerToggled = false;
+
 function getFetch(){
   const choice = document.querySelector('input').value
   console.log(choice)
@@ -19,10 +21,15 @@ function getFetch(){
         }
        
         document.querySelector('h3').innerText = data.explanation
+        document.querySelector('h2').innerText = data.title
+        document.querySelector('h4').innerText = data.date
 
-        // Toggle the visibility of the photo-container
-        const photoContainer = document.querySelector('.photo-container');
-        photoContainer.classList.toggle('hidden');
+            // Toggle the visibility of the photo-container only if it hasn't been toggled before
+            if (!isPhotoContainerToggled) {
+              const photoContainer = document.querySelector('.photo-container');
+              photoContainer.classList.toggle('hidden');
+              isPhotoContainerToggled = true;
+          }
       })
       .catch(err => {
           console.log(`error ${err}`)
