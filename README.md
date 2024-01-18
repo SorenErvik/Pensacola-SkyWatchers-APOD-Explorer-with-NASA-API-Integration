@@ -16,6 +16,7 @@ The frontend of Pensacola SkyWatchers APOD is crafted using fundamental web tech
 HTML5: Providing the structure for the web pages.
 CSS3: Styling the application for an immersive visual experience.
 JavaScript (ES6+): Implementing interactive features and managing API data.
+
 `Backend`
 
 Pensacola SkyWatchers APOD utilizes a frontend-only architecture, meaning there's no dedicated backend server for this project. Instead, the focus is on client-side development to fetch and display data from NASA's APOD API.
@@ -48,7 +49,7 @@ Future updates may include the integration of educational resources related to e
 
 Consideration is given to adding user preferences and profiles, allowing users to customize their Pensacola SkyWatchers APOD experience. Saved preferences, favorite discoveries, and personalized content recommendations could enhance user engagement.
 
-`Lessons Learned:`
+# Lessons Learned:
 The development of Pensacola SkyWatchers APOD has been a rewarding journey, offering valuable insights into creating an educational and engaging web app. Here are some key takeaways:
 
 `Educational Impact`
